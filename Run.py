@@ -45,7 +45,7 @@ for l2 in L2_Lambda:
 		print ("L2: ", l2, "LR: ", lr, "Loss in Validation: ", loss_v)
 
 loss_train, loss_test, c_index_tr, c_index_te = trainDeepMusicsNet(x_train,  clinical_train, ytime_train, yevent_train, \
-							x_test, age_test, ytime_test, yevent_test, functional_mask, \
+							x_test, ytime_test, yevent_test, functional_mask, \
 							In_Nodes, functional_Nodes, Hidden_Nodes, Out_Nodes, \
 							opt_lr_loss, opt_l2_loss, Num_EPOCHS, Dropout_Rate)
 print ("Optimal L2: ", opt_l2_loss, "Optimal LR: ", opt_lr_loss)
