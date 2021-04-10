@@ -23,6 +23,8 @@ Pathway prior knowledge information is from the Molecular Signatures Database MS
 
 Mutations,expressions,methlations,copy number variation and clinical information of all cancer types are from TCGA Database(https://portal.gdc.cancer.gov/).
 
+Some example data of both are given for testing.
+
 ## Model
  
 The multi-omics data are preprocessed into four sets of matrixes.
