@@ -14,7 +14,7 @@ To use DeepMusics, do the following:
 
 2.Prepare data
 
-3.Train and evaluate DeepMultiOmics
+3.Train and evaluate DeepMusics
 
 ## Data
 
