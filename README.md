@@ -46,6 +46,8 @@ Some example datasets are given for testing.
 The input data is a matrix including multiple samples with following features:
 omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_geneN3,omic4_gene1,---,omic4_geneN4
 
+Of course, the omics number is self-defined, the genes number is self-defined too.
+
 Train the model via the following:
 
     cd DeepMusics
