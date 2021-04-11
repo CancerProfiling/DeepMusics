@@ -1,8 +1,17 @@
 from DataLoader import load_data, load_functional_modules
 from train import trainDeepMusicsNet
 import torch
+import argparse
 import numpy as np
-
+parser = argparse.ArgumentParser()
+parser.description = 'please enter the OmicsNum,geneNum,functionMouduleNum'
+parser.add_argument("-N", "--input", help="this is omics number", dest="OmicsNum", type=int, default="4")
+parser.add_argument("-G", "--inputG", help="this is gene number ",  type=int, default="1200")
+parser.add_argument("-F", "--inputF", help="this is functional module or pathways number and your can define by yourself",  type=int, default="860")
+args = parser.parse_args()
+print("Omics number is :",args.OmicsNum)
+print("Gene number is :",args.inputG)
+print("Functional module or pathways number is :",args.inputF)
 torch.cuda.set_device(1)
 dtype = torch.FloatTensor
 In_Nodes = 5000 ##gene nodes in need of change for users
