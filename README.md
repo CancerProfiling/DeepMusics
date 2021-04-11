@@ -14,7 +14,7 @@ To use DeepMusics, do the following:
 
 2.Prepare data
 
-2.1.The example datasets are listed in the expreiments/data.
+Note.The example datasets are listed in the expreiments/data.
 
 3.Train and evaluate DeepMusics
 
