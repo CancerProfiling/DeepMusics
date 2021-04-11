@@ -1,7 +1,6 @@
 from DeepMusics import DeepMusicsNet
-from SubNetwork_SparseCoding import dropout_mask, s_mask
-from Survival_CostFunc_CIndex import R_set, neg_par_log_likelihood, c_index
-
+from SubNetwork import dropout_mask, s_mask
+from Survival import R_set, neg_par_log_likelihood, c_index
 import torch
 import torch.optim as optim
 import copy
