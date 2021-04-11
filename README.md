@@ -47,7 +47,17 @@ omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_g
 Train the model via the following:
 
     cd DeepMusics
-    python train.py 
+    usage: Run.py [-h] [-N OMICSNUM] [-G INPUTG] [-F INPUTF]
+    please enter the OmicsNum,geneNum,functionMouduleNum
+    optional arguments:
+    -h, --help            show this help message and exit
+    -N OMICSNUM, --input OMICSNUM
+                        this is omics number
+    -G INPUTG, --inputG INPUTG
+                        this is gene number
+    -F INPUTF, --inputF INPUTF
+                        this is functional module or pathways number and your
+                        can define by yourself
 
 ## Contact
 
