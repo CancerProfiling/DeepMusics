@@ -52,9 +52,9 @@ Train the model via the following:
     optional arguments:
     -h, --help            show this help message and exit
     -N OMICSNUM, --input OMICSNUM
-                        this is omics number
+                        this is total omics number
     -G INPUTG, --inputG INPUTG
-                        this is gene number
+                        this is total gene number
     -F INPUTF, --inputF INPUTF
                         this is functional module or pathways number and your
                         can define by yourself
