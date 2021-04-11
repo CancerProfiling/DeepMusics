@@ -1,8 +1,9 @@
 from DataLoader import load_data, load_functional_modules
-from train import trainDeepMusicsNet
-import torch
+from Train import trainDeepMusicsNet
 import argparse
+import torch
 import numpy as np
+import os
 parser = argparse.ArgumentParser()
 parser.description = 'please enter the OmicsNum,geneNum,functionMouduleNum'
 parser.add_argument("-N", "--input", help="this is omics number", dest="OmicsNum", type=int, default="4")
