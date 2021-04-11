@@ -41,8 +41,7 @@ The shapes for them are genes * samples, which are inputs of the model.
 
 Some example datasets are given for testing.
 
-The input data is a matrix including samples* 
-(omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_geneN3,omic4_gene1,---,omic4_geneN4,omic---)
+The input data is a matrix including samples * (omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_geneN3,omic4_gene1,---,omic4_geneN4,omic---)
 
 Train the model via the following:
 
