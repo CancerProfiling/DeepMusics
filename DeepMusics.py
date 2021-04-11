@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-class DeepMusics(nn.Module):
+class DeepMusicsNet(nn.Module):
 	def __init__(self, In_Nodes, funcitonal_Nodes, Hidden_Nodes, Out_Nodes, functional_Mask):
 		super(DeepMusics, self).__init__()
 		self.tanh = nn.Tanh()
