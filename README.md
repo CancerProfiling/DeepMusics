@@ -13,7 +13,8 @@ To use DeepMusics, do the following:
 1.Install the environment
 
 2.Prepare data
-  The example datasets are listed in the expreiments/data.
+
+2.1.The example datasets are listed in the expreiments/data.
 
 3.Train and evaluate DeepMusics
 
