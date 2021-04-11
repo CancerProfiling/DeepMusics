@@ -28,7 +28,7 @@ def load_data(path, dtype):
 	return(X, YTIME, YEVENT,CLINICAL)
 
 
-def load_pathway(path, dtype):
+def load_functional_modules(path, dtype):
 	pathway_mask = pd.read_csv(path, index_col = 0).as_matrix()
 	PATHWAY_MASK = torch.from_numpy(pathway_mask).type(dtype)
 	if torch.cuda.is_available():
