@@ -1,4 +1,4 @@
-from Model import DeepMusicsNet
+from DeepMusics import DeepMusicsNet
 from SubNetwork import dropout_mask, s_mask
 from Survival_CIndex import R_set, neg_par_log_likelihood, c_index
 
