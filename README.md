@@ -39,7 +39,7 @@ The multi-omics data are preprocessed into four sets of matrixes.
 
 The shapes for them are genes * samples, which are inputs of the model.
 
-Some example data are given for testing.
+Some example datasets are given for testing.
 
 Train the model via the following:
 
