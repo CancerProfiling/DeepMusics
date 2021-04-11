@@ -14,9 +14,9 @@ print("Gene number is :",args.inputG)
 print("Functional module or pathways number is :",args.inputF)
 torch.cuda.set_device(1)
 dtype = torch.FloatTensor
-In_Nodes = 5000 ##gene nodes in need of change for users
-functional_Nodes = 800 ##functinal modules nodes in need of change for user
-Hidden_Nodes = 100 
+In_Nodes = args.inputG ##gene nodes in need of change for users
+functional_Nodes = args.inputF ##functinal modules nodes in need of change for user
+Hidden_Nodes = 200 
 Out_Nodes = 30 
 
 Initial_Learning_Rate = [0.03, 0.01, 0.001, 0.00075]
