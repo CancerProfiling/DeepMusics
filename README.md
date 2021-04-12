@@ -20,7 +20,7 @@ Note.The example datasets are listed in the expreiments/data.
 
 ## Install require softwares
 
-Next step is to create a conda env bcsp and install Python v3.7.4 and required packages.
+Next step is to create a conda env DeepMusics and install Python v3.7.4 and required packages.
 
     conda create --name DeepMusics -c conda-forge -c python=3.7.4
     
