@@ -60,8 +60,8 @@ Train the model via the following:
     -G INPUTG, --inputG INPUTG
                         this is total gene number
     -F INPUTF, --inputF INPUTF
-                        this is functional module or pathways number and your
-                        can define by yourself
+                        this is functional module or pathways number or your
+                        can define your own GO set by yourself
 
 ## Contact
 
