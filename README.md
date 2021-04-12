@@ -10,13 +10,27 @@ DeepMusics can be applied to different resolved-omics data and any type of clini
 ## Install
 To use DeepMusics, do the following:
 
-1.Install the environment
+1.Install the environment, to run the code please first make sure that you have miniconda or conda installed.
 
 2.Prepare data
 
 Note.The example datasets are listed in the expreiments/data.
 
 3.Train and evaluate DeepMusics
+
+## Install require softwares
+
+Next step is to create a conda env bcsp and install Python v3.7.4 and required packages.
+
+    conda create --name DeepMusics -c conda-forge -c python=3.7.4
+    
+## Activate the conda env using this command
+    
+    conda activate DeepMusics
+
+## Now clone the git repo
+
+    git clone https://github.com/CancerProfiling/DeepMusics.git DeepMusics && cd DeepMusics
 
 ## Data
 
