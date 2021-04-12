@@ -10,7 +10,7 @@ DeepMusics can be applied to different resolved-omics data and any type of clini
 ## Install
 To use DeepMusics, do the following:
 
-1.Install the environment, to run the code please first make sure that you have miniconda or conda installed.
+1.Install the environment, To run the code please first make sure that you have [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [conda](https://docs.conda.io/) installed.
 
 2.Prepare data
 
