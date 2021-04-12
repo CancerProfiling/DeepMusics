@@ -32,7 +32,7 @@ Next step is to create a conda env DeepMusics and install Python v3.7.4 and requ
 
     git clone https://github.com/CancerProfiling/DeepMusics.git DeepMusics && cd DeepMusics
 
-## Data
+## Data for Functional Module
 
 Pathway prior knowledge information is from the Molecular Signatures Database MSigDB (http://www.gsea-msigdb.org/gsea/msigdb/index.jsp).
 
@@ -41,7 +41,7 @@ Mutations,expressions,methlations,copy number variation and clinical information
 
 Some example data of both are given in the experiments/data/example.csv
 
-## Data
+## Data for omics 
  
 The multi-omics data are preprocessed into four sets of matrixes.
 
