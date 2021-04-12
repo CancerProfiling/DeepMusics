@@ -41,7 +41,7 @@ Mutations,expressions,methlations,copy number variation and clinical information
 
 Some example data of both are given in the experiments/data/example.csv
 
-## Model
+## Data
  
 The multi-omics data are preprocessed into four sets of matrixes.
 
@@ -61,6 +61,8 @@ The input data is a matrix including multiple samples with following features:
 omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_geneN3,omic4_gene1,---,omic4_geneN4
 
 Of course, the number of omics typeis is self-defined, the number of genes is self-defined too.
+
+## Model 
 
 Train the model via the following:
 
