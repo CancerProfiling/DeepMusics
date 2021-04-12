@@ -5,10 +5,8 @@ import math
 def dropout_mask(n_node, drop_p):
 	keep_p = 1.0 - drop_p
 	mask = torch.Tensor(np.random.binomial(1, keep_p, size=n_node))
-	###if gpu is being used
 	if torch.cuda.is_available():
 		mask = mask.cuda()
-	###
 	return mask
 
 def s_mask(sparse_level, param_matrix, nonzero_param_1D, dtype):
