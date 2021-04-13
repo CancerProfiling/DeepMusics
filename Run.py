@@ -6,9 +6,9 @@ import numpy as np
 import os
 parser = argparse.ArgumentParser()
 parser.description = 'please enter the OmicsNum,geneNum,functionMouduleNum'
-parser.add_argument("-N", "--input", help="this is omics number", dest="OmicsNum", type=int, default="4")
-parser.add_argument("-G", "--inputG", help="this is gene number ",  type=int, default="1200")
-parser.add_argument("-F", "--inputF", help="this is functional module or pathways number and your can define by yourself",  type=int, default="860")
+parser.add_argument("-N", "--input", help="this is omics number, default is 4", dest="OmicsNum", type=int, default="4")
+parser.add_argument("-G", "--inputG", help="this is gene number, default is 1200 ",  type=int, default="1200")
+parser.add_argument("-F", "--inputF", help="this is functional module or pathways number and your can define by yourself, default is 860",  type=int, default="860")
 args = parser.parse_args()
 print("Omics number is :",args.OmicsNum)
 print("Gene number is :",args.inputG)
