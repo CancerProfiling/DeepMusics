@@ -75,7 +75,7 @@ Train the model via the following:
     optional arguments:
     -h, --help            show this help message and exit
     -N OMICSNUM, --input OMICSNUM
-                        this is total omics number
+                        this is total omics number，you can input 1 or 4 etc.
     -G INPUTG, --inputG INPUTG
                         this is total gene number
     -F INPUTF, --inputF INPUTF
