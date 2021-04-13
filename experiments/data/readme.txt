@@ -5,3 +5,4 @@ Some other clinical information including age,sex,weight or subtype,stage etc ca
 3. The default set of omics data is snapped the gene level. 
 If your data are not in the gene level, the pathway layer have to be redefined accordingly.
 
+The example datasets for running DeepMusics are given in the DeepMusics/experiments/data/single-omics and DeepMusics/experiments/data/multi-omics.
