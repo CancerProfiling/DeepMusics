@@ -22,7 +22,10 @@ Note.The example datasets are listed in the expreiments/data.
 
 Next step is to create a conda env DeepMusics and install Python v3.7.4 and required packages.
 
-    conda create --name DeepMusics -c conda-forge -c python=3.7.4
+    conda create --name DeepMusics -c conda-forge -c python=3.7.4 
+    conda activate DeepMusics
+    conda install -c conda-forge statsmodels sebp scikit-survival
+    pip install numpy pandas scikit-learn scipy dgl torch==1.5.0 ecos joblib numexpr osqp
     
 ## Activate the conda env using this command
     
