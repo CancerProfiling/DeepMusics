@@ -66,7 +66,7 @@ The input data is a matrix including multiple samples with following features:
 omic1_gene1,---,omic1_geneN,omic2_gene1,---,omic2_geneN2,omic3_gene1,---,omic3_geneN3,omic4_gene1,---,omic4_geneN4
 Of course, the number of omics typeis is self-defined, the number of genes is self-defined too.
 
-You can define them by yourself as the example data given in the [example data]/(https://github.com/CancerProfiling/DeepMusics/tree/main/experiments/data).
+You can define them by yourself as the example data given in the [example data](https://github.com/CancerProfiling/DeepMusics/tree/main/experiments/data).
 
 ## Model 
 
