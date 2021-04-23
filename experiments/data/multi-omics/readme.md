@@ -12,6 +12,7 @@ You can set your own data as the example given in the following link.
 
 [scna_rna_validation data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.validation.csv)
 
+[scna_rna_functional module data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/pathway_mask_scna_rna.csv)
 # Run example case
 
 To test multi-omics example, we provide scna and rna expression omics as example here.
