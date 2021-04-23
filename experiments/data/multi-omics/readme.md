@@ -16,6 +16,8 @@ For example , if you data is
 
 you can use combine.sh to combine them into the following datasets
 
+
+
 You can also set your own data as the example given in the following link.
 
 [scna_rna_train data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.train.csv)
