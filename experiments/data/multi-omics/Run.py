@@ -1,5 +1,5 @@
 from DataLoader import load_data, load_pathway
-from Train import trainDeepMusicsNet
+from train import trainDeepMusicsNet
 import torch
 import numpy as np
 torch.cuda.set_device(9)
