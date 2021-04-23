@@ -16,63 +16,55 @@ def trainDeepMusicsNet(train_x, train_clinical, train_ytime, train_yevent, \
 			Learning_Rate, L2, Num_Epochs, Dropout_Rate):
 	
 	net = DeepMusicsNet(In_Nodes, Pathway_Nodes, Hidden_Nodes, Out_Nodes, pathway_mask)
-	###if gpu is being used
 	if torch.cuda.is_available():
 		net.cuda()
-	###
-	###optimizer
 	opt = optim.Adam(net.parameters(), lr=Learning_Rate, weight_decay = L2)
 
 	for epoch in range(Num_Epochs+1):
 		net.train()
-		opt.zero_grad() ###reset gradients to zeros
-		###Randomize dropout masks
+		opt.zero_grad()
 		net.do_m1 = dropout_mask(Pathway_Nodes, Dropout_Rate[0])
 		net.do_m2 = dropout_mask(Hidden_Nodes, Dropout_Rate[1])
 
-		pred = net(train_x, train_clinical) ###Forward
-		loss = neg_par_log_likelihood(pred, train_ytime, train_yevent) ###calculate loss
-		loss.backward() ###calculate gradients
-		opt.step() ###update weights and biases
+		pred = net(train_x, train_clinical)
+		loss = neg_par_log_likelihood(pred, train_ytime, train_yevent) 
+		loss.backward() 
+		opt.step() 
 
-		net.sc1.weight.data = net.sc1.weight.data.mul(net.pathway_mask) ###force the connections between gene layer and pathway layer
-
-		###obtain the small sub-network's connections
+		net.sc1.weight.data = net.sc1.weight.data.mul(net.pathway_mask) 
+	
 		do_m1_grad = copy.deepcopy(net.sc2.weight._grad.data)
 		do_m2_grad = copy.deepcopy(net.sc3.weight._grad.data)
 		do_m1_grad_mask = torch.where(do_m1_grad == 0, do_m1_grad, torch.ones_like(do_m1_grad))
 		do_m2_grad_mask = torch.where(do_m2_grad == 0, do_m2_grad, torch.ones_like(do_m2_grad))
-		###copy the weights
+
 		net_sc2_weight = copy.deepcopy(net.sc2.weight.data)
 		net_sc3_weight = copy.deepcopy(net.sc3.weight.data)
 
-		###serializing net 
 		net_state_dict = net.state_dict()
 
-		###Sparse Coding
-		###make a copy for net, and then optimize sparsity level via copied net
 		copy_net = copy.deepcopy(net)
 		copy_state_dict = copy_net.state_dict()
 		for name, param in copy_state_dict.items():
-			###omit the param if it is not a weight matrix
+		
 			if not "weight" in name:
 				continue
-			###omit gene layer
+		
 			if "sc1" in name:
 				continue
-			###stop sparse coding
+	
 			if "sc4" in name:
 				break
-			###sparse coding between the current two consecutive layers is in the trained small sub-network
+			
 			if "sc2" in name:
 				active_param = net_sc2_weight.mul(do_m1_grad_mask)
 			if "sc3" in name:
 				active_param = net_sc3_weight.mul(do_m2_grad_mask)
 			nonzero_param_1d = active_param[active_param != 0]
-			if nonzero_param_1d.size(0) == 0: ###stop sparse coding between the current two consecutive layers if there are no valid weights
+			if nonzero_param_1d.size(0) == 0:
 				break
 			copy_param_1d = copy.deepcopy(nonzero_param_1d)
-			###set up potential sparsity level in [0, 100)
+			
 			S_set =  torch.arange(100, -1, -1)[1:]
 			copy_param = copy.deepcopy(active_param)
 			S_loss = []
@@ -96,9 +88,9 @@ def trainDeepMusicsNet(train_x, train_clinical, train_ytime, train_yevent, \
 			if "sc3" in name:
 				final_optimal_param_mask = torch.where(do_m2_grad_mask == 0, torch.ones_like(do_m2_grad_mask), optimal_param_mask)
 				optimal_transformed_param = net_sc3_weight.mul(final_optimal_param_mask)
-			###update weights in copied net
+
 			copy_state_dict[name].copy_(optimal_transformed_param)
-			###update weights in net
+
 			net_state_dict[name].copy_(optimal_transformed_param)
 
 		if epoch % 200 == 0: 
