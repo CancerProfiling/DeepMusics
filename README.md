@@ -73,12 +73,10 @@ You can define them by yourself as the example data given in the experiments/dat
 Train the model via the following:
 
     cd DeepMusics
-    usage: Run.py [-h] [-N OMICSNUM] [-G INPUTG] [-F INPUTF]
+    usage: Run.py [-h] [-G INPUTG] [-F INPUTF]
     please enter the OmicsNum,geneNum,functionMouduleNum
     optional arguments:
     -h, --help            show this help message and exit
-    -N OMICSNUM, --input OMICSNUM
-                        this is total omics number，you can input 1 or 4 etc.
     -G INPUTG, --inputG INPUTG
                         this is total gene number
     -F INPUTF, --inputF INPUTF
