@@ -4,8 +4,8 @@ def R_set(x):
 	n_sample = x.size(0)
 	matrix_ones = torch.ones(n_sample, n_sample)
 	indicator_matrix = torch.tril(matrix_ones)
-
 	return(indicator_matrix)
+
 def neg_par_log_likelihood(pred, ytime, yevent):
 	n_observed = yevent.sum(0)
 	ytime_indicator = R_set(ytime)
@@ -17,8 +17,6 @@ def neg_par_log_likelihood(pred, ytime, yevent):
 	cost = (- (sum_diff_in_observed / n_observed)).reshape((-1,))
 
 	return(cost)
-
-
 
 def c_index(pred, ytime, yevent):
 	n_sample = len(ytime)
