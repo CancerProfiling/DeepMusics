@@ -6,7 +6,7 @@ To get started, you need to download example datasets as shown in multi-omics fi
 
 [scna_rna_test data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.test.csv)
 
-[scna_rna_train data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.train.csv)
+[scna_rna_validation data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.validation.csv)
 
 # Run example case
 
