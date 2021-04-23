@@ -6,13 +6,13 @@ there are combined copy number varint and RNA expression omics data together.
 
 For example , if you data is
 
- rna_expression_omic_filename
+ rna_expression_omic_file
 
- rna_functional_module_filename
+ rna_functional_module_file
 
- copy_number_variant_omic_filename
-
- cnv_functional_module_filename, 
+ copy_number_variant_omic_file
+ 
+ cnv_functional_module_file, 
 
 you can use combine.sh to combine them as the following datasets
 
