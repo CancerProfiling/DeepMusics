@@ -15,4 +15,6 @@ To test multi-omics example, we provide scna and rna expression omics as example
    C-index is used to evaluate the model performance with test.csv.
 
 Your can run 
+
+
     python Run.py
