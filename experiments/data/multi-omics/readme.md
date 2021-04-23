@@ -2,6 +2,8 @@
 
 To get started, you need to download example datasets as shown in multi-omics file:
 
+[scna_rna_train data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.validation.csv)
+
 # Run example case
 
 To test multi-omics example, we provide scna and rna expression omics as example here.
