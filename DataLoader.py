@@ -10,7 +10,6 @@ def sort_data(path):
 	ytime = data.loc[:, ["OS_MONTHS"]].values
 	yevent = data.loc[:, ["OS_EVENT"]].values
 	clinical = data.loc[:, ["Clinical"]].values
-
 	return(x, ytime, yevent,clinical)
 
 
@@ -28,9 +27,10 @@ def load_data(path, dtype):
 	return(X, YTIME, YEVENT,CLINICAL)
 
 
-def load_functional_modules(path, dtype):
-	functional_modules_mask = pd.read_csv(path, index_col = 0).as_matrix()
-	PATHWAY_MASK = torch.from_numpy(functional_modules_mask).type(dtype)
+def load_pathway(path, dtype):
+	pathway_mask = pd.read_csv(path, index_col = 0).as_matrix()
+	PATHWAY_MASK = torch.from_numpy(pathway_mask).type(dtype)
 	if torch.cuda.is_available():
 		PATHWAY_MASK = PATHWAY_MASK.cuda()
+	return(PATHWAY_MASK)
 	return(PATHWAY_MASK)
