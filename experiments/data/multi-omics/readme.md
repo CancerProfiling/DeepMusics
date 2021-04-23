@@ -2,7 +2,7 @@
 
 To get started, you need to download example datasets as shown in multi-omics file:
 
-##Run example case
+#Run example case
 
 To test multi-omics example, we provide scna and rna expression omics as example here.
 
