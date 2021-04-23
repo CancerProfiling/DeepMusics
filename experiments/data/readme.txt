@@ -9,4 +9,4 @@ The example datasets for running DeepMusics are given in the
 
 [single_omics](https://github.com/CancerProfiling/DeepMusics/tree/main/experiments/data/single-omics)
 
-[multi-omics](https://github.com/CancerProfiling/DeepMusics/experiments/data/multi-omics)
+[multi-omics](https://github.com/CancerProfiling/DeepMusics/tree/main/experiments/data/multi-omics)
