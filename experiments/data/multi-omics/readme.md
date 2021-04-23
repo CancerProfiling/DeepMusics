@@ -5,13 +5,14 @@ To get started, you can download example datasets as shown in multi-omics file:
 there are combined copy number varint and RNA expression omics data together.
 
 For example , if you data is
-rna_expression_omic_filename
 
-rna_functional_module_filename
+ rna_expression_omic_filename
 
-copy_number_variant_omic_filename
+ rna_functional_module_filename
 
-cnv_functional_module_filename, 
+ copy_number_variant_omic_filename
+
+ cnv_functional_module_filename, 
 
 you can use combine.sh to combine them as the following datasets
 
