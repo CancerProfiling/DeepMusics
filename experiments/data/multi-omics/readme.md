@@ -1,6 +1,10 @@
 # Example datasets
 
-To get started, you need to download example datasets as shown in multi-omics file:
+To get started, you can download example datasets as shown in multi-omics file:
+
+there are combined copy number varint and RNA expression omics data together.
+
+You can set your own data as the example given in the following link.
 
 [scna_rna_train data](https://github.com/CancerProfiling/DeepMusics/blob/main/experiments/data/multi-omics/scna_rna.train.csv)
 
