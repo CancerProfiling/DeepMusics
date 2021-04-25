@@ -41,9 +41,3 @@ for l2 in L2_Lambda:
 			opt_c_index_tr = c_index_tr
 			opt_c_index_va = c_index_va
 		print ("L2: ", l2, "LR: ", lr, "Loss in Validation: ", loss_valid)
-loss_train, loss_test, c_index_tr, c_index_te = trainCoxPASNet(x_train, clinical_train, ytime_train, yevent_train, \
-							x_test, clinical_test, ytime_test, yevent_test, pathway_mask, \
-							In_Nodes, Pathway_Nodes, Hidden_Nodes, Out_Nodes, \
-							opt_lr_loss, opt_l2_loss, Num_EPOCHS, Dropout_Rate)
-print ("Optimal L2: ", opt_l2_loss, "Optimal LR: ", opt_lr_loss)
-print("C-index in Test: ", c_index_te)
