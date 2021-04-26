@@ -1,4 +1,4 @@
-# DeepOmix: A Multi-Omics Scalable and Interpretable Deep Learning Framework and Application in Cancer Survival Prediction
+# DeepMusics : a MUlti-omics Scalable and Interpretable Cancer Survival Deep learning framework)
 
   ![image](https://github.com/CancerProfiling/DeepMusics/blob/main/Figures/deepMusics.jpg)
   
