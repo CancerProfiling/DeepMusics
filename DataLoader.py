@@ -28,7 +28,7 @@ def load_data(path, dtype):
 
 
 def load_pathway(path, dtype):
-	pathway_mask = pd.read_csv(path, index_col = 0).as_matrix()
+	pathway_mask = pd.read_csv(path, index_col = 0).values
 	PATHWAY_MASK = torch.from_numpy(pathway_mask).type(dtype)
 	if torch.cuda.is_available():
 		PATHWAY_MASK = PATHWAY_MASK.cuda()
