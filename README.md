@@ -10,7 +10,12 @@ DeepMusics can be applied to different resolved-omics data and any type of clini
 ## Install
 To use DeepMusics, do the following:
 
-1.	Please first make sure that you have anconda installed. (https://www.anaconda.com/products/individual#Downloads)  Then, create a conda environment with python v3 and clone the git repo.
+1.	Please first make sure that you have anconda installed. (https://www.anaconda.com/products/individual#Downloads) If you don't have conda, you might find it helpful to install Miniconda before beginning:
+```
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
+```
+Then, create a conda environment with python v3 and clone the git repo.
 ```
     conda create --name DeepMusics python=3.6  ##Create the environment and install python 3.6
     git clone https://github.com/CancerProfiling/DeepMusics.git DeepMusics && cd DeepMusics
